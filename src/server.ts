@@ -12,6 +12,6 @@ app.get("/", (req, res) => {
   return res.send("Até aqui funcionando");
 });
 
-app.listen("https://lu-lombardi-server.herokuapp.com", () => {
+app.listen(process.env.PORT, () => {
   console.log("server is running");
 });
