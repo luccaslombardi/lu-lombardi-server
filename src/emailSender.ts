@@ -19,7 +19,7 @@ const transport = nodemailer.createTransport({
 
 export async function sendEmail({ name, email, subject, body }: SendMailData) {
     await transport.sendMail({
-        from: `${name} <${email}>`,
+        from: `<luccaswebsite@gmail.com>`,
         to: 'luccas.lombardi@hotmail.com',
         subject: subject,
         html: [
