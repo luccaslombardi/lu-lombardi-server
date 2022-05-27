@@ -1,5 +1,5 @@
 import express from 'express'
-import { sendEmail, SendMailData } from './emailSender';
+import { sendEmail } from './emailSender';
 
 
 export const routes = express.Router();

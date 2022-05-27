@@ -8,18 +8,17 @@ export interface SendMailData {
 }
 
 const transport = nodemailer.createTransport({
-    host: "smtp.gmail.com",
-    port: 465,
-    secure: false,
-    auth: {
-      user: "luccaswebsite@gmail.com",
-      pass: "Luccasweb123"
-    }
-  });
+  host: "smtp.mailtrap.io",
+  port: 2525,
+  auth: {
+    user: "6c3ee8086d1915",
+    pass: "b754c82135514c"
+  }
+});
 
 export async function sendEmail({ name, email, subject, body }: SendMailData) {
     await transport.sendMail({
-        from: `<luccaswebsite@gmail.com>`,
+        from: `${name} <${email}>`,
         to: 'luccas.lombardi@hotmail.com',
         subject: subject,
         html: [
