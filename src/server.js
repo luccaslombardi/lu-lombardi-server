@@ -13,6 +13,6 @@ app.use(routes_1.routes);
 app.get("/", (req, res) => {
     return res.send("Até aqui funcionando");
 });
-app.listen(3333, () => {
+app.listen("https://lu-lombardi-server.herokuapp.com", () => {
     console.log("server is running");
 });
