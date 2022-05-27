@@ -9,8 +9,8 @@ export interface SendMailData {
 
 const transport = nodemailer.createTransport({
     host: "smtp.gmail.com",
-    port: 587,
-    secure: true,
+    port: 465,
+    secure: false,
     auth: {
       user: "luccaswebsite@gmail.com",
       pass: "Luccasweb123"
