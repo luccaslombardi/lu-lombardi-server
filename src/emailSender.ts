@@ -8,11 +8,12 @@ export interface SendMailData {
 }
 
 const transport = nodemailer.createTransport({
-    host: "smtp.mailtrap.io",
-    port: 2525,
+    host: "smtp.gmail.com",
+    port: 587,
+    secure: true,
     auth: {
-      user: "6c3ee8086d1915",
-      pass: "b754c82135514c"
+      user: "luccaswebsite@gmail.com",
+      pass: "Luccasweb123"
     }
   });
 
